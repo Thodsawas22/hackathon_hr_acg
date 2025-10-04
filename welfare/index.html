@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>สวัสดิการ – Autocorp Holding PCL.</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script defer src="../assets/js/nav.js"></script>
+</head>
+<body class="bg-dark">
+  <!-- NAV (same as other pages) -->
+  <header class="nav">
+    <div class="nav__brand">AUTOCORP HOLDING PCL.</div>
+    <button class="nav__burger" aria-label="เปิดเมนู">&#9776;</button>
+    <nav class="nav__links">
+      <a href="../">Home</a>
+      <a href="../about/">About</a>
+      <a href="../roles/">ตำแหน่งว่าง</a>
+      <a class="active" href="./">สวัสดิการ</a>
+      <a href="../contact/">ติดต่อ</a>
+    </nav>
+    <div class="nav__auth">
+      <a href="../login/">Login</a>
+      <a href="../signup/">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- CONTENT: just a picture -->
+  <main class="about-wrap">
+    <!-- Put your welfare image here -->
+    <img
+      class="about-img"
+      src="../assets/img/welfare-hero.jpg"
+      alt="สวัสดิการพนักงาน Autocorp Holding PCL."
+    />
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="y"></span> Autocorp Holding PCL.</small>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

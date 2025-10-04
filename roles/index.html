@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>สมัครงาน – Autocorp Holding PCL.</title>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script defer src="../assets/js/nav.js"></script>
+  <script defer src="../assets/js/form.js"></script>
+</head>
+<body class="bg-dark">
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav__brand">AUTOCORP HOLDING PCL.</div>
+    <button class="nav__burger" aria-label="เปิดเมนู">&#9776;</button>
+    <nav class="nav__links">
+      <a href="../">Home</a>
+      <a href="../about/">About</a>
+      <a class="active" href="./">ตำแหน่งว่าง</a>
+      <a href="../welfare/">สวัสดิการ</a>
+      <a href="../contact/">ติดต่อ</a>
+    </nav>
+    <div class="nav__auth">
+      <a href="../login/">Login</a>
+      <a href="../signup/">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- FORM -->
+  <main class="container section">
+    <h1 class="section__title">ร่วมงานกับเรา</h1>
+
+    <!-- Desired role -->
+    <div class="card">
+      <h2 class="card__title">ตำแหน่งที่ต้องการสมัคร</h2>
+      <div class="grid grid--3">
+        <div class="field">
+          <label for="workArea">พื้นที่ที่ต้องการปฏิบัติงาน</label>
+          <select id="workArea" required>
+            <option value="">— เลือกพื้นที่ —</option>
+            <option>ขอนแก่น</option>
+            <option>อุดรธานี</option>
+            <option>นครราชสีมา</option>
+            <option>อุบลราชธานี</option>
+            <option>กรุงเทพฯ</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="role1">ตำแหน่งที่ 1</label>
+          <select id="role1" required>
+            <option value="">— เลือกตำแหน่ง —</option>
+            <option>ช่างบริการ (Technician)</option>
+            <option>ที่ปรึกษางานบริการ (SA)</option>
+            <option>ที่ปรึกษางานขาย (Sales)</option>
+            <option>คลังสินค้า</option>
+            <option>การตลาดดิจิทัล</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="role2">ตำแหน่งที่ 2</label>
+          <select id="role2">
+            <option value="">— เลือกตำแหน่ง (ถ้ามี) —</option>
+            <option>ช่างบริการ (Technician)</option>
+            <option>ที่ปรึกษางานบริการ (SA)</option>
+            <option>ที่ปรึกษางานขาย (Sales)</option>
+            <option>คลังสินค้า</option>
+            <option>การตลาดดิจิทัล</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personal info -->
+    <div class="card">
+      <h2 class="card__title">ข้อมูลส่วนตัว</h2>
+      <div class="grid grid--resume">
+        <div class="resume-box">
+          <p class="muted">อัปโหลดประวัติ/ใบสมัคร (ไม่บังคับใน demo)</p>
+          <input type="file" id="resume" accept=".pdf,.doc,.docx,.jpg,.png" />
+        </div>
+
+        <div class="grid grid--2">
+          <div class="field"><label>ชื่อ</label><input id="firstName" required /></div>
+          <div class="field"><label>นามสกุล</label><input id="lastName" required /></div>
+
+          <div class="field">
+            <label>วัน/เดือน/ปี เกิด</label>
+            <input type="date" id="dob" required />
+          </div>
+          <div class="field">
+            <label>อายุ (คำนวณอัตโนมัติ)</label>
+            <input id="age" readonly />
+          </div>
+
+          <div class="field"><label>ชื่อเล่น</label><input id="nickname" /></div>
+          <div class="field"><label>เงินเดือนที่คาดหวัง (บาท)</label><input id="expectedSalary" type="number" min="0" step="500" /></div>
+
+          <div class="field"><label>วันที่พร้อมเริ่มงาน</label><input type="date" id="startDate" /></div>
+          <div class="field"><label>E-Mail</label><input id="email" type="email" required /></div>
+
+          <div class="field"><label>เบอร์โทรศัพท์</label><input id="phone" type="tel" required /></div>
+          <div class="field"><label>ที่อยู่</label><input id="address" /></div>
+
+          <div class="field">
+            <label>สถานภาพทางทหาร</label>
+            <select id="military">
+              <option value="">— เลือก —</option>
+              <option>เรียน รด./ได้รับการยกเว้น</option>
+              <option>ผ่านการเกณฑ์แล้ว</option>
+              <option>อยู่ระหว่างผ่อนผัน/รอเกณฑ์</option>
+              <option>ไม่เกี่ยวข้อง</option>
+            </select>
+          </div>
+          <div class="field"><label>สัญชาติ</label><input id="nationality" /></div>
+
+          <div class="field">
+            <label>มีรอยสักหรือไม่</label>
+            <select id="tattoo">
+              <option value="">— เลือก —</option>
+              <option>ไม่มี</option>
+              <option>มี (ไม่เปิดเผยตำแหน่ง)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label>ใบขับขี่รถยนต์</label>
+            <select id="driverLicense">
+              <option value="">— เลือก —</option>
+              <option>มี</option>
+              <option>ไม่มี</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn__row">
+        <button id="submitBtn" class="btn btn--green">ส่งใบสมัคร</button>
+        <button id="exportBtn" class="btn btn--ghost">ดาวน์โหลด CSV ทั้งหมด</button>
+        <span id="formStatus" class="status"></span>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <small>© <span id="y"></span> Autocorp Holding PCL.</small>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
